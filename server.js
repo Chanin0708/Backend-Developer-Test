@@ -178,7 +178,7 @@ app.post('/cancelbooking', (req, res) => {
 });
 
 // Show available seat.
-app.get('/availableseats', (req, res) => {
+app.post('/availableseats', (req, res) => {
   let cinema_name = req.body.cinema_name;
   let Showtime = req.body.Showtime;
   let Theatre_name = req.body.Theatre_name;
